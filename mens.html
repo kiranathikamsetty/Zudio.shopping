@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mens wear</title>
+    <link rel="icon"href="./images/iconjs.png">
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+
+<!--header-->    
+<header>
+    <div class="top-header">
+         <div class="logo">Zudio</div>
+           <div class="search-bar">
+              <input type="text" placeholder= "Search products, brands & etc">
+              <button type="submit"><i class="fas fa-search"></i> Search</button>
+           </div>
+    </div>
+
+
+<nav class="bottom-header">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mens.html">Mens wear</a></li>
+        <li><a href="womens.html">Womens wear</a></li>
+        <li><a href="kids.html">Kids wear</a></li>
+    </ul>
+</nav>
+
+</header>
+<!--header--> 
+
+
+<!--main content-->
+<main class="main-content">
+    <aside class="filters">
+
+         <div class="filter-section">
+            <h3>Filter by Price</h3>
+                <div class="filter-option">
+                   <input type="number" id="minPrice" placeholder="Min Price">
+                </div>
+                <div class="filter-option">
+                   <input type="number" id="maxPrice" placeholder="Max Price">
+                </div>
+                <div class="filter-option">
+                   <button onclick="filterProducts()">Apply Filter</button>
+                </div>
+         </div><br/>
+
+
+        <div class="filter-categories">
+            <h3>Filter by Category</h3>
+<li><a href="#">Casual Shirts</a></li>
+<li><a href="#">Formal Shirts</a></li>
+<li><a href="#">T-shirts</a></li>
+<li><a href="#">Jeans</a></li>
+<li><a href="#">Sport shoes</a></li>
+<li><a href="#">Casual shoes</a></li>
+<li><a href="#">Formal shoes</a></li>
+<li><a href="#">Sandals</a></li>
+
+        </div>
+    </aside>
+
+<section class="products">
+
+        <div class="product-card" data-price="499">
+            <img src="./images/whiteshirt.png" alt="Casual Shirts">
+             <div class="product-info">
+                <h3>Casual shirt</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹499</div>
+                <button class="add-to-cart">Buy Now</button>
+             </div>
+        </div>
+        
+        <div class="product-card" data-price="199">
+            <img src="./images/black t shirt.png" alt="T-shirts">
+            <div class="product-info">
+                <h3>Black T-shirt </h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹199</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="1999">
+            <img src="./images/blue jeans.png" alt="Jeans">
+            <div class="product-info">
+                <h3>Lenin Blue jeans</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹1999</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="1599">
+            <img src="./images/cargo jeans.png" alt="Jeans">
+            <div class="product-info">
+                <h3>Cargo jeans</h3>
+                <div class="rating">★★★☆☆</div>
+                <div class="price">₹1599</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="699">
+            <img src="./images/check black shirt.png" alt="Casual Shirts">
+            <div class="product-info">
+                <h3>Checks shirts</h3>
+                <div class="rating">★★★★★</div>
+                <div class="price">₹699</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="499">
+            <img src="./images/check red shirt.png" alt="Casual Shirts">
+            <div class="product-info">
+                <h3>Red shirts</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹499</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="399">
+            <img src="./images/checks shirt.png" alt="Casual Shirts">
+            <div class="product-info">
+                <h3>Checks shirts</h3>
+                <div class="rating">★★★★★</div>
+                <div class="price">₹399</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="999">
+            <img src="./images/denim blue jeans.png" alt="Jeans">
+            <div class="product-info">
+                <h3>Denim Blue jeans</h3>
+                <div class="rating">★★★★★</div>
+                <div class="price">₹999</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="999">
+            <img src="./images/formal blue shirt.png" alt="Formal Shirts">
+            <div class="product-info">
+                <h3>Formal shirts</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹999</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="6999">
+            <img src="./images/formal coats.png" alt="Formal Shirts">
+            <div class="product-info">
+                <h3>Formal suits</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹6,999</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="1299">
+            <img src="./images/formal shirt.png" alt="Formal Shirts">
+            <div class="product-info">
+                <h3>Formal Shirt</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹1,299</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="1999">
+            <img src="./images/formal shots shirts.png" alt="Formal Shirts">
+            <div class="product-info">
+                <h3>Formal shots</h3>
+                <div class="rating">★★★★★</div>
+                <div class="price">₹1999</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="2499">
+            <img src="./images/formal white shirt.png" alt="Formal Shirts">
+            <div class="product-info">
+                <h3>Formal white shirt</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹2,499</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="899">
+            <img src="./images/full hands t shirt.png" alt="T-shirts">
+            <div class="product-info">
+                <h3>Full hands t-shirt</h3>
+                <div class="rating">★★★★★</div>
+                <div class="price">₹899</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="199">
+            <img src="./images/green t shirt.png" alt="T-shirts">
+            <div class="product-info">
+                <h3>Green T-shirt</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹199</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-price="499">
+            <img src="./images/grey t shirt.png" alt="T-shirts">
+            <div class="product-info">
+                <h3>Grey T-shirt</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹499</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-price="1999">
+            <img src="./images/jean trousers.png" alt="Jeans">
+            <div class="product-info">
+                <h3>Trouser jeans</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹1999</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-price="299">
+            <img src="./images/orange t shirt.png" alt="T-shirts">
+            <div class="product-info">
+                <h3>Orange T-shirt</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹299</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-price="599">
+            <img src="./images/plain blue shirt.png" alt="Casual Shirts">
+            <div class="product-info">
+                <h3>Plain blue shirt</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹599</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-price="399">
+            <img src="./images/red t shirt.png" alt="T-shirts">
+            <div class="product-info">
+                <h3>Red T-shirt</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹399</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-price="399">
+            <img src="./images/white t shirt.png" alt="T-shirts">
+            <div class="product-info">
+                <h3>White T-shirt</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹399</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-price="799">
+            <img src="./images/adidas sandals.png" alt="Sandals">
+            <div class="product-info">
+                <h3>Adidas sandals</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹799</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-price="799">
+            <img src="./images/black shoes.png" alt="Sport shoes">
+            <div class="product-info">
+                <h3>Black shoes</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹799</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-price="899">
+            <img src="./images/blue sport shoes.png" alt="Sport shoes">
+            <div class="product-info">
+                <h3>Blue sport shoes</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹899</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-price="799">
+            <img src="./images/brown shoes.png" alt="Formal shoes">
+            <div class="product-info">
+                <h3>Brown shoes</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹799</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-price="599">
+            <img src="./images/croc sandals.png" alt="Sandals">
+            <div class="product-info">
+                <h3>Croc sandals</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹599</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-price="699">
+            <img src="./images/crocs sandals.png" alt="Sandals">
+            <div class="product-info">
+                <h3>Croc Sandals</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹699</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-price="899">
+            <img src="./images/formal shoes.png" alt="Formal shoes">
+            <div class="product-info">
+                <h3>Formal shoes</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹899</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-price="999">
+            <img src="./images/jordan shoes.png" alt="Casual shoes">
+            <div class="product-info">
+                <h3>Jordan shoes</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹999</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-price="899">
+            <img src="./images/leather shoes.png" alt="Casual shoes">
+            <div class="product-info">
+                <h3>Leather shoes</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹899</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-card" data-price="1599">
+            <img src="./images/running sport shoes.png" alt="Sport shoes">
+            <div class="product-info">
+                <h3>Running shoes</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹1599</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-price="899">
+            <img src="./images/sandals brown.png" alt="Sandals">
+            <div class="product-info">
+                <h3>Brown Sandals</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹899</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-price="999">
+            <img src="./images/sandals.png" alt="Sandals">
+            <div class="product-info">
+                <h3>Sandals</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹999</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-price="799">
+            <img src="./images/sneaker shoes.png" alt="Sport shoes">
+            <div class="product-info">
+                <h3>Sneakers</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹799</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-price="999">
+            <img src="./images/white shoes.png" alt="Sport shoes">
+            <div class="product-info">
+                <h3>White shoes</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹999</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>             
+    </section>
+</main>
+
+
+<script>
+    function filterProducts() {
+        let minPrice = parseFloat(document.getElementById('minPrice').value) || 0;
+        let maxPrice = parseFloat(document.getElementById('maxPrice').value) || Infinity;
+        let products = document.querySelectorAll('.product-card');
+
+        products.forEach(product => {
+            let price = parseFloat(product.getAttribute('data-price'));
+            if (price >= minPrice && price <= maxPrice) {
+                product.style.display = 'block';
+            } else {
+                product.style.display = 'none';
+            }
+        });
+    }
+</script>
+<!--main content-->
+    
+</body>
+</html>

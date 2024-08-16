@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Womens wear</title>
+    <link rel="icon"href="./images/iconjs.png">
+    <link rel="stylesheet"href="style.css">
+</head>
+
+<body>
+
+<!--header-->    
+<header>
+    <div class="top-header">
+         <div class="logo">Zudio</div>
+           <div class="search-bar">
+              <input type="text" placeholder= "Search products, brands & etc">
+              <button type="submit"><i class="fas fa-search"></i> Search</button>
+           </div>
+    </div>
+
+
+<nav class="bottom-header">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mens.html">Mens wear</a></li>
+        <li><a href="womens.html">Womens wear</a></li>
+        <li><a href="kids.html">Kids wear</a></li>
+    </ul>
+</nav>
+
+</header>
+<!--header--> 
+
+
+
+<!--main content-->
+<main class="main-content">
+    <aside class="filters">
+
+         <div class="filter-section">
+            <h3>Filter by Price</h3>
+                <div class="filter-option">
+                   <input type="number" id="minPrice" placeholder="Min Price">
+                </div>
+                <div class="filter-option">
+                   <input type="number" id="maxPrice" placeholder="Max Price">
+                </div>
+                <div class="filter-option">
+                   <button onclick="filterProducts()">Apply Filter</button>
+                </div>
+         </div><br/>
+
+        <div class="filter-categories">
+            <h3>Filter by Category</h3>
+                 <li><a href="#">Sarees</a></li>
+                 <li><a href="#">Lehengas</a></li>
+                 <li><a href="#">Dresses</a></li>
+                 <li><a href="#">Gowns</a></li>
+        </div>
+    </aside>
+
+<section class="products">
+
+        <div class="product-card" data-price="899">
+            <img src="./images/black dress.png" alt="Dresses">
+             <div class="product-info">
+                <h3>Black dress</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹899</div>
+                <button class="add-to-cart">Buy Now</button>
+             </div>
+        </div>
+        
+        <div class="product-card" data-price="999">
+            <img src="./images/blue gown.png" alt="Gowns">
+            <div class="product-info">
+                <h3>Blue gowns </h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹999</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="1299">
+            <img src="./images/dress gold.png" alt="Dresses">
+            <div class="product-info">
+                <h3>Golden gowns</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹1299</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="1199">
+            <img src="./images/dress.png" alt="Dresses">
+            <div class="product-info">
+                <h3>Dresses</h3>
+                <div class="rating">★★★☆☆</div>
+                <div class="price">₹1199</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="899">
+            <img src="./images/gold gown.png" alt="Gowns">
+            <div class="product-info">
+                <h3>Gold colour gown</h3>
+                <div class="rating">★★★★★</div>
+                <div class="price">₹899</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="799">
+            <img src="./images/kanchi saree.png" alt="Sarees">
+            <div class="product-info">
+                <h3>Kanchi sarees</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹799</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="699">
+            <img src="./images/pattu sarees.png" alt="Sarees">
+            <div class="product-info">
+                <h3>Pattu sarees</h3>
+                <div class="rating">★★★★★</div>
+                <div class="price">₹699</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="899">
+            <img src="./images/pink gown.png" alt="Gowns">
+            <div class="product-info">
+                <h3>Pink Gowns</h3>
+                <div class="rating">★★★★★</div>
+                <div class="price">₹899</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="699">
+            <img src="./images/pink sarees.png" alt="Sarees">
+            <div class="product-info">
+                <h3>Pink sarees</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹699</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="1399">
+            <img src="./images/pochampally saree.png" alt="Sarees">
+            <div class="product-info">
+                <h3>Pochampally sarees</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹1399</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="1099">
+            <img src="./images/purple gown.png" alt="Gowns">
+            <div class="product-info">
+                <h3>Purple gown</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹1099</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="1199">
+            <img src="./images/red dress.png" alt="Dresses">
+            <div class="product-info">
+                <h3>Red dress</h3>
+                <div class="rating">★★★★★</div>
+                <div class="price">₹1199</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="1399">
+            <img src="./images/red gown.png" alt="Gowns">
+            <div class="product-info">
+                <h3>Red gown</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹1399</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="699">
+            <img src="./images/sarees.png" alt="Sarees">
+            <div class="product-info">
+                <h3>Sarees</h3>
+                <div class="rating">★★★★★</div>
+                <div class="price">₹699</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+        
+        <div class="product-card" data-price="599">
+            <img src="./images/white dress.png" alt="Dresses">
+            <div class="product-info">
+                <h3>White dress</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹599</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-price="759">
+            <img src="./images/white gown.png" alt="Gowns">
+            <div class="product-info">
+                <h3>White gown</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹759</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+
+
+        <div class="product-card" data-price="509">
+            <img src="./images/yellow dress.png" alt="Dresses">
+            <div class="product-info">
+                <h3>Yellow dress</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹509</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-price="799">
+            <img src="./images/dark gown.png" alt="Gowns">
+            <div class="product-info">
+                <h3>Dark gown</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹799</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card" data-price="699">
+            <img src="./images/black dress.png" alt="Dresses">
+            <div class="product-info">
+                <h3>Black dress</h3>
+                <div class="rating">★★★★☆</div>
+                <div class="price">₹699</div>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+
+           
+    </section>
+</main>
+
+
+<script>
+    function filterProducts() {
+        let minPrice = parseFloat(document.getElementById('minPrice').value) || 0;
+        let maxPrice = parseFloat(document.getElementById('maxPrice').value) || Infinity;
+        let products = document.querySelectorAll('.product-card');
+
+        products.forEach(product => {
+            let price = parseFloat(product.getAttribute('data-price'));
+            if (price >= minPrice && price <= maxPrice) {
+                product.style.display = 'block';
+            } else {
+                product.style.display = 'none';
+            }
+        });
+    }
+</script>
+<!--main content-->
+
+    
+</body>
+</html>
